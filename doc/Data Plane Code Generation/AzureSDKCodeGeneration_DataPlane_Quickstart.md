@@ -19,6 +19,7 @@ This tutorial has following sections:
     - [README](#readme)
     - [Changelog](#changelog)
     - [Customize](#customize)
+  - [Service driven evolution](#service-driven-evolution) 
 
 <!-- /TOC -->
 
@@ -149,3 +150,15 @@ e.g. Running the script for a project in `sdk\deviceupdate` would look like this
 ```powershell
 eng\scripts\Export-API.ps1 deviceupdate
 ```
+
+## Service driven evolution
+
+Some changes in Rest API are not breaking changes but could cause breaking changes in the generated SDK. In order to make the SDK backward compatible, we can add customized code such as overload methods. The following sections will show some examples of such scenarios and how to handle them.
+
+### A method gets a new optional parameter
+
+### A new method is added (new path)
+
+### A new method is added (path existed in the Swagger)
+
+### A new body type is added (was JSON, and now JSON + JPEG).
