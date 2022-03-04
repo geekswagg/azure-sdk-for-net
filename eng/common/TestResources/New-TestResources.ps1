@@ -534,6 +534,7 @@ try {
 
     $tags = @{
         Creator = $UserName
+        Owners = $UserName
         ServiceDirectory = $ServiceDirectory
     }
 
